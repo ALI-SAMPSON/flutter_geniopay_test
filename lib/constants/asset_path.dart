@@ -23,7 +23,7 @@ const String flashIcon = 'icon-flash.svg';
 const String sendIcon = 'icon-send.svg';
 const String mastercardIcon = 'icon-mastercard.svg';
 const String messageIcon = 'icon-message.svg';
-const String cardIcon = 'icon-icon-pay-1.svg';
+const String cardIcon = 'icon-pay-1.svg';
 const String tagIcon = 'icon-tag.svg';
 const String helpIcon = 'icon-help.svg';
 

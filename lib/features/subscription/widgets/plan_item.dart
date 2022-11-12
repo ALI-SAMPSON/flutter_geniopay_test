@@ -159,13 +159,14 @@ class PlanItem extends StatelessWidget {
               decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: LinearGradient(
-                      stops: [0.0, 1.0],
-                      colors: [Color(0xFF3EC9E7), Color(0xFF008AA7)])),
+                      stops: const [0.0, 1.0],
+                      colors: const [Color(0xFF3EC9E7), Color(0xFF008AA7)])),
               child: Center(
                   child: CustomText(
                 text: 'B',
+                textAlign: TextAlign.center,
                 textColor: AppColor.colorWhite,
-                fontSize: 50,
+                fontSize: 45,
                 fontFamily: AppFont.iBMPlexSansMedium,
               )),
             ),
