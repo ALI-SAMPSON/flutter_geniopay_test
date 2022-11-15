@@ -1,24 +1,13 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_geniopay_app/commons/country_list_picker.dart';
 import 'package:flutter_geniopay_app/commons/custom_app_bar.dart';
 import 'package:flutter_geniopay_app/commons/custom_button.dart';
-import 'package:flutter_geniopay_app/commons/custom_text_field.dart';
 import 'package:flutter_geniopay_app/constants/app_color.dart';
 import 'package:flutter_geniopay_app/constants/app_dimen.dart';
 import 'package:flutter_geniopay_app/constants/app_font.dart';
 import 'package:flutter_geniopay_app/constants/asset_path.dart';
 import 'package:flutter_geniopay_app/commons/custom_text.dart';
-import 'package:flutter_geniopay_app/controllers/registration_controller.dart';
-import 'package:flutter_geniopay_app/features/account/widgets/add_country_button.dart';
-import 'package:flutter_geniopay_app/features/account/widgets/check_list_item.dart';
-import 'package:flutter_geniopay_app/features/account/widgets/label_text.dart';
 import 'package:flutter_geniopay_app/features/home/widgets/identity_item.dart';
-import 'package:flutter_geniopay_app/features/subscription/widgets/plan_item.dart';
-import 'package:flutter_geniopay_app/features/subscription/widgets/row_text.dart';
-import 'package:flutter_geniopay_app/features/subscription/widgets/subscription_item.dart';
 import 'package:flutter_geniopay_app/utils/size_helpers.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
 class ProofIdentityPage extends StatelessWidget {
@@ -113,7 +102,7 @@ class ProofIdentityPage extends StatelessWidget {
                       ),
                       IdentityItem(
                         title:
-                            'We will ask you to record a short video of yourself using the app',
+                            'We will ask you to record a short\nvideo of yourself using the app',
                         icon: getIconPath(cameraMovieIcon),
                       ),
 

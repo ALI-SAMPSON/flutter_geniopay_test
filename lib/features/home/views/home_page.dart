@@ -90,11 +90,11 @@ class HomePage extends StatelessWidget {
         onTap: () {},
         child: CircleAvatar(
           backgroundColor: AppColor.colorPrimary,
-          radius: 32,
+          radius: 30,
           child: SvgPicture.asset(
             getIconPath(genioPayIcon),
-            width: 50,
-            height: 50,
+            width: 47,
+            height: 47,
           ),
         ),
       ),
@@ -181,12 +181,12 @@ class HomePage extends StatelessWidget {
                               Badge(
                                 // notification icon with badge
                                 position:
-                                    BadgePosition.topEnd(top: -5, end: -4),
+                                    BadgePosition.topEnd(top: -5, end: -3),
                                 badgeColor: AppColor.colorRed,
                                 badgeContent: Text(
                                   '5',
                                   style: TextStyle(
-                                      color: AppColor.colorWhite, fontSize: 12),
+                                      color: AppColor.colorWhite, fontSize: 10),
                                 ),
                                 child: SvgPicture.asset(
                                   getIconPath(notificationIcon),

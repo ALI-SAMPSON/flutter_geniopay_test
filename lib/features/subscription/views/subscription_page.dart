@@ -41,7 +41,7 @@ class SubscriptionPage extends StatelessWidget {
                   child: CustomText(
                     text:
                         'The more money you send, the \nbetter your insurance gets',
-                    fontSize: 16,
+                    fontSize: 18,
                     textAlign: TextAlign.center,
                     textColor: AppColor.colorPrimary,
                     fontFamily: AppFont.iBMPlexSansMedium,

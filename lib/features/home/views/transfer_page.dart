@@ -176,7 +176,7 @@ class TransfersPage extends StatelessWidget {
                 alignment: Alignment.bottomLeft,
                 child: CustomText(
                     text: 'Receiver',
-                    fontSize: 18,
+                    fontSize: 17,
                     textColor: AppColor.colorPrimary,
                     fontFamily: AppFont.iBMPlexSansMedium),
               ),
@@ -244,7 +244,7 @@ class TransfersPage extends StatelessWidget {
                 alignment: Alignment.bottomLeft,
                 child: CustomText(
                     text: 'Delivery time',
-                    fontSize: 18,
+                    fontSize: 17,
                     textColor: AppColor.colorPrimary,
                     fontFamily: AppFont.iBMPlexSansMedium),
               ),
@@ -254,8 +254,8 @@ class TransfersPage extends StatelessWidget {
               ),
 
               TransferCard(
-                text1: 'Jane Smith',
-                text2: '+44567876543',
+                text1: 'Instant',
+                text2: 'Within 30 minutes',
                 text3: 'Free\n',
                 text4: '\$3.00',
                 icon1: getIconPath(sendIcon),
@@ -270,7 +270,7 @@ class TransfersPage extends StatelessWidget {
                 alignment: Alignment.bottomLeft,
                 child: CustomText(
                     text: 'Payment method',
-                    fontSize: 18,
+                    fontSize: 17,
                     textColor: AppColor.colorPrimary,
                     fontFamily: AppFont.iBMPlexSansMedium),
               ),
@@ -343,7 +343,7 @@ class TransfersPage extends StatelessWidget {
                           color: AppColor.colorWhite,
                           fontFamily: AppFont.iBMPlexSansLight,
                         ),
-                        children: const[
+                        children: const [
                           TextSpan(
                             text: '\$1,005.00',
                             style: TextStyle(
@@ -373,7 +373,6 @@ class TransfersPage extends StatelessWidget {
               SizedBox(
                 height: displayHeight(context) * 0.015,
               ),
-
             ],
           ),
         ),

@@ -33,7 +33,8 @@ class PlanItem extends StatelessWidget {
                     blurRadius: 10,
                     offset: Offset(3, 0), // changes position of shadow
                   ),
-                ],),
+                ],
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: SingleChildScrollView(
@@ -60,7 +61,7 @@ class PlanItem extends StatelessWidget {
                         fontSize: 18,
                         textAlign: TextAlign.center,
                         textColor: AppColor.colorPrimary,
-                        fontFamily: AppFont.iBMPlexSansRegular,
+                        fontFamily: AppFont.iBMPlexSansMedium,
                       ),
 
                       SizedBox(
