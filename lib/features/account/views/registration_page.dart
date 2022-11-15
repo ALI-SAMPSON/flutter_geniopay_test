@@ -166,6 +166,7 @@ class RegistrationPage extends StatelessWidget {
                     textColor: AppColor.colorPrimary,
                     fontSize: 16,
                     textAlign: TextAlign.start,
+                    fontFamily: AppFont.iBMPlexSansMedium,
                   ),
                 ),
 
