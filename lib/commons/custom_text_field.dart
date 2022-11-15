@@ -20,28 +20,36 @@ class CustomTextField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       obscureText: false,
+      keyboardType: (hintText.toLowerCase().contains('tin') ||
+              hintText.toLowerCase().contains('number'))
+          ? TextInputType.number
+          : TextInputType.text,
       maxLines: maxLines,
       decoration: InputDecoration(
-          contentPadding:
-              EdgeInsets.only(left: 18, right: 18, top: 22, bottom: 20),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(AppDimen.borderRadius),
-            borderSide: BorderSide(
-              color: AppColor.colorPrimary,
-              width: AppDimen.borderWidth,
-            ),
+        contentPadding:
+            EdgeInsets.only(left: 18, right: 18, top: 22, bottom: 20),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimen.borderRadius),
+          borderSide: BorderSide(
+            color: AppColor.colorPrimary,
+            width: AppDimen.borderWidth,
           ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(AppDimen.borderRadius),
-            borderSide: BorderSide(
-                color: AppColor.colorPrimary, width: AppDimen.borderWidth),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppDimen.borderRadius),
+          borderSide: BorderSide(
+            color: AppColor.colorPrimary,
+            width: AppDimen.borderWidth,
           ),
-          hintText: hintText,
-          hintStyle: TextStyle(
-              fontFamily: AppFont.iBMPlexSansLight,
-              fontWeight: FontWeight.w300,
-              color: AppColor.colorBlack,
-              fontSize: 14)),
+        ),
+        hintText: hintText,
+        hintStyle: TextStyle(
+          fontFamily: AppFont.iBMPlexSansLight,
+          fontWeight: FontWeight.w300,
+          color: AppColor.colorBlack,
+          fontSize: 14,
+        ),
+      ),
       validator: (val) {
         if (val == null || val.isEmpty) {
           return 'Enter your $hintText';

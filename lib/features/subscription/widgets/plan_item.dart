@@ -22,6 +22,8 @@ class PlanItem extends StatelessWidget {
             right: 0,
             left: 0,
             child: Container(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
               height: height - 30,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -35,117 +37,114 @@ class PlanItem extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: SingleChildScrollView(
-                  physics: BouncingScrollPhysics(),
-                  child: Column(
-                    children: [
-                      // Plan details
-                      SizedBox(
-                        height: displayHeight(context) * 0.03,
-                      ),
-                      CustomText(
-                        text: 'Basic Plan',
-                        fontSize: 24,
-                        textAlign: TextAlign.center,
-                        textColor: AppColor.colorBlack,
-                        fontFamily: AppFont.iBMPlexSansBold,
-                      ),
-                      SizedBox(
-                        height: displayHeight(context) * 0.01,
-                      ),
-                      CustomText(
-                        text:
-                            'Send €200 (or more) per\n month and get coverage for:',
-                        fontSize: 18,
-                        textAlign: TextAlign.center,
+              child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
+                child: Column(
+                  children: [
+                    // Plan details
+                    SizedBox(
+                      height: displayHeight(context) * 0.03,
+                    ),
+                    CustomText(
+                      text: 'Basic Plan',
+                      fontSize: 24,
+                      textAlign: TextAlign.center,
+                      textColor: AppColor.colorBlack,
+                      fontFamily: AppFont.iBMPlexSansBold,
+                    ),
+                    SizedBox(
+                      height: displayHeight(context) * 0.01,
+                    ),
+                    CustomText(
+                      text:
+                          'Send €200 (or more) per\n month and get coverage for:',
+                      fontSize: 18,
+                      textAlign: TextAlign.center,
+                      textColor: AppColor.colorPrimary,
+                      fontFamily: AppFont.iBMPlexSansMedium,
+                    ),
+
+                    SizedBox(
+                      height: displayHeight(context) * 0.04,
+                    ),
+
+                    // plan features
+                    RowText(
+                        text1:
+                            'Accidental death,\ndismemberment, or\nparalysis',
+                        text2: '',
+                        text3: 'Up to',
+                        text4: '€5,000'),
+
+                    SizedBox(
+                      height: displayHeight(context) * 0.01,
+                    ),
+
+                    Divider(
+                      thickness: AppDimen.borderWidth,
+                      color: AppColor.colorPrimary.withOpacity(0.2),
+                    ),
+
+                    SizedBox(
+                      height: displayHeight(context) * 0.01,
+                    ),
+
+                    RowText(
+                        text1: 'Temporary total\ndisability',
+                        text2: '(caused by an accident)',
+                        text4: 'N/A'),
+
+                    SizedBox(
+                      height: displayHeight(context) * 0.01,
+                    ),
+
+                    Divider(
+                      thickness: AppDimen.borderWidth,
+                      color: AppColor.colorPrimary.withOpacity(0.2),
+                    ),
+
+                    SizedBox(
+                      height: displayHeight(context) * 0.01,
+                    ),
+
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: CustomText(
+                        text: 'In case of death due to an accident:',
+                        fontSize: 17,
+                        textAlign: TextAlign.start,
                         textColor: AppColor.colorPrimary,
-                        fontFamily: AppFont.iBMPlexSansMedium,
+                        fontFamily: AppFont.iBMPlexSansRegular,
                       ),
+                    ),
 
-                      SizedBox(
-                        height: displayHeight(context) * 0.04,
+                    SizedBox(
+                      height: displayHeight(context) * 0.02,
+                    ),
+
+                    RowText(text1: 'Funeral costs', text2: '', text4: 'N/A'),
+
+                    SizedBox(
+                      height: displayHeight(context) * 0.015,
+                    ),
+
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: CustomText(
+                        text: 'OR',
+                        fontSize: 17,
+                        textAlign: TextAlign.start,
+                        textColor: Colors.black54,
+                        fontFamily: AppFont.iBMPlexSansLight,
                       ),
+                    ),
 
-                      // plan features
-                      RowText(
-                          text1:
-                              'Accidental death,\ndismemberment, or\nparalysis',
-                          text2: '',
-                          text3: 'Up to',
-                          text4: '€5,000'),
+                    SizedBox(
+                      height: displayHeight(context) * 0.015,
+                    ),
 
-                      SizedBox(
-                        height: displayHeight(context) * 0.01,
-                      ),
-
-                      Divider(
-                        thickness: AppDimen.borderWidth,
-                        color: AppColor.colorPrimary.withOpacity(0.2),
-                      ),
-
-                      SizedBox(
-                        height: displayHeight(context) * 0.01,
-                      ),
-
-                      RowText(
-                          text1: 'Temporary total\ndisability',
-                          text2: '(caused by an accident)',
-                          text4: 'N/A'),
-
-                      SizedBox(
-                        height: displayHeight(context) * 0.01,
-                      ),
-
-                      Divider(
-                        thickness: AppDimen.borderWidth,
-                        color: AppColor.colorPrimary.withOpacity(0.2),
-                      ),
-
-                      SizedBox(
-                        height: displayHeight(context) * 0.01,
-                      ),
-
-                      Align(
-                        alignment: Alignment.topLeft,
-                        child: CustomText(
-                          text: 'In case of death due to an accident:',
-                          fontSize: 17,
-                          textAlign: TextAlign.start,
-                          textColor: AppColor.colorPrimary,
-                          fontFamily: AppFont.iBMPlexSansRegular,
-                        ),
-                      ),
-
-                      SizedBox(
-                        height: displayHeight(context) * 0.02,
-                      ),
-
-                      RowText(text1: 'Funeral costs', text2: '', text4: 'N/A'),
-
-                      SizedBox(
-                        height: displayHeight(context) * 0.015,
-                      ),
-
-                      Align(
-                        alignment: Alignment.topLeft,
-                        child: CustomText(
-                          text: 'OR',
-                          fontSize: 17,
-                          textAlign: TextAlign.start,
-                          textColor: Colors.black54,
-                          fontFamily: AppFont.iBMPlexSansLight,
-                        ),
-                      ),
-
-                      SizedBox(
-                        height: displayHeight(context) * 0.015,
-                      ),
-
-                      RowText(text1: 'Reparation', text2: '', text4: 'N/A'),
-                    ],
-                  ),
+                    RowText(text1: 'Reparation', text2: '', text4: 'N/A'),
+                  ],
                 ),
               ),
             ),

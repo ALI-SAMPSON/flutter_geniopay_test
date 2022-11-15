@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_geniopay_app/commons/country_list_picker.dart';
 import 'package:flutter_geniopay_app/commons/custom_app_bar.dart';
