@@ -217,13 +217,13 @@ class TransfersPage extends StatelessWidget {
                           children: const [
                             CustomText(
                               text: 'Jane Smith',
-                              fontSize: 15,
+                              fontSize: 16,
                               textColor: AppColor.colorBlack,
                               fontFamily: AppFont.iBMPlexSansMedium,
                             ),
                             CustomText(
                               text: '+44567876543',
-                              fontSize: 15,
+                              fontSize: 16,
                               textColor: AppColor.colorBlack,
                               fontFamily: AppFont.iBMPlexSansLight,
                             ),

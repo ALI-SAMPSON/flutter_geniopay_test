@@ -9,7 +9,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class TransactionItem extends StatelessWidget {
   final Transaction transaction;
-  const TransactionItem({Key? key, required this.transaction}) : super(key: key);
+  const TransactionItem({Key? key, required this.transaction})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,17 +32,19 @@ class TransactionItem extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
-              SizedBox(width: displayWidth(context) * 0.06,),
+              SizedBox(
+                width: displayWidth(context) * 0.06,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   CustomText(
-                    text: transaction.name!,
+                    text: transaction.name,
                     textColor: AppColor.colorBlack,
                     fontFamily: AppFont.iBMPlexSansRegular,
                   ),
                   CustomText(
-                    text: transaction.date!,
+                    text: transaction.date,
                     textColor: Colors.grey,
                     fontSize: 14,
                     fontFamily: AppFont.iBMPlexSansRegular,
@@ -61,7 +64,7 @@ class TransactionItem extends StatelessWidget {
               ),
               CustomText(
                 text: transaction.status,
-                textColor:transaction.statusColor,
+                textColor: transaction.statusColor,
                 fontSize: 14,
                 fontFamily: AppFont.iBMPlexSansRegular,
               ),

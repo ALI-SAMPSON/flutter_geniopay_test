@@ -6,14 +6,14 @@ import 'package:flutter_geniopay_app/constants/app_dimen.dart';
 import 'package:flutter_geniopay_app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
-Future<void> main() async{
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.white, // set color of status bar
     statusBarIconBrightness: Brightness.dark, // set color of status bar icon
-    systemNavigationBarColor:  Colors.white, // set color of navigation bar
+    systemNavigationBarColor: Colors.white, // set color of navigation bar
     systemNavigationBarIconBrightness:
-    Brightness.dark, // set color of icons on the navigation bar
+        Brightness.dark, // set color of icons on the navigation bar
   )); // set st
   runApp(const MyApp());
 }
@@ -33,13 +33,11 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(4.0),
             ),
             side: BorderSide(
-                width: AppDimen.borderWidth, color:
-            AppColor.colorPrimary),
+                width: AppDimen.borderWidth, color: AppColor.colorPrimary),
             splashRadius: 0),
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: AppColor.colorPrimary,
-          secondary: AppColor.colorYellowDark
-        ),
+            primary: AppColor.colorPrimary,
+            secondary: AppColor.colorYellowDark),
       ),
       initialBinding: AppBinding(),
       initialRoute: AppPages.INITIAL,
@@ -47,4 +45,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

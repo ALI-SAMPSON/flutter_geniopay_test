@@ -85,6 +85,7 @@ class TransferCard extends StatelessWidget {
                           ? SizedBox()
                           : CustomText(
                               text: text2,
+                              fontSize: 16,
                               textColor: AppColor.colorBlack,
                               fontFamily: AppFont.iBMPlexSansLight,
                             ),
@@ -112,7 +113,7 @@ class TransferCard extends StatelessWidget {
                           TextSpan(
                             text: text4 ?? '',
                             style: TextStyle(
-                                fontSize: 15,
+                                fontSize: 16,
                                 decoration: TextDecoration.lineThrough,
                                 color: AppColor.colorBlack,
                                 fontFamily: AppFont.iBMPlexSansLight),

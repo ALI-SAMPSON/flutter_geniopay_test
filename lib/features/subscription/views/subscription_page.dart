@@ -35,7 +35,7 @@ class SubscriptionPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: displayHeight(context) * 0.12,
+                height: displayHeight(context) * 0.10,
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: CustomText(
