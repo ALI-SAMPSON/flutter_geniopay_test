@@ -367,7 +367,14 @@ class TransfersPage extends StatelessWidget {
                 text: 'SEND',
                 textColor: AppColor.colorBlack,
                 fontFamily: AppFont.iBMPlexSansMedium,
-                onTap: () => Get.toNamed(Routes.HOME_PAGE),
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Your transfer was successful'),
+                    ),
+                  );
+                  Get.back(); // exit page
+                },
               ),
 
               SizedBox(

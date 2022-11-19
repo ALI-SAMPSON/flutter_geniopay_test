@@ -1,5 +1,4 @@
 import 'package:badges/badges.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_geniopay_app/constants/app_color.dart';
 import 'package:flutter_geniopay_app/constants/app_dimen.dart';
@@ -35,7 +34,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             // card icon
-            GestureDetector(
+            InkWell(
                 onTap: () {},
                 child: Padding(
                   padding: EdgeInsets.all(14.0),
@@ -47,8 +46,8 @@ class HomePage extends StatelessWidget {
                 )),
 
             // dollar icon
-            GestureDetector(
-              onTap: () {},
+            InkWell(
+              onTap: () => Get.toNamed(Routes.TRANSFER_PAGE),
               child: Padding(
                 padding: EdgeInsets.only(top: 14.0, bottom: 14.0, right: 40.0),
                 child: SvgPicture.asset(
@@ -60,8 +59,8 @@ class HomePage extends StatelessWidget {
             ),
 
             // wallet icon
-            GestureDetector(
-                onTap: () {},
+            InkWell(
+                onTap: () => Get.toNamed(Routes.SUBSCRIPTION_PAGE),
                 child: Padding(
                   padding: EdgeInsets.only(top: 14.0, bottom: 14.0, left: 40.0),
                   child: SvgPicture.asset(
@@ -72,7 +71,7 @@ class HomePage extends StatelessWidget {
                 )),
 
             // menu icon
-            GestureDetector(
+            InkWell(
                 onTap: () {},
                 child: Padding(
                   padding: EdgeInsets.all(14.0),
@@ -86,8 +85,8 @@ class HomePage extends StatelessWidget {
         ),
       ),
       // OOPS: I didn't get the accurate SVG versions of the Logo
-      floatingActionButton: GestureDetector(
-        onTap: () {},
+      floatingActionButton: InkWell(
+        onTap: () => Get.toNamed(Routes.TRANSFER_PAGE),
         child: CircleAvatar(
           backgroundColor: AppColor.colorPrimary,
           radius: 30,
@@ -117,7 +116,7 @@ class HomePage extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          GestureDetector(
+                          InkWell(
                             onTap: () =>
                                 Get.toNamed(Routes.PROOF_IDENTITY_PAGE),
                             child: CircleAvatar(
@@ -170,38 +169,48 @@ class HomePage extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              SvgPicture.asset(
-                                getIconPath(treeIcon),
-                                width: 28,
-                                height: 28,
+                              InkWell(
+                                onTap: () {},
+                                child: SvgPicture.asset(
+                                  getIconPath(treeIcon),
+                                  width: 28,
+                                  height: 28,
+                                ),
                               ), // tree icon
                               SizedBox(
                                 width: displayWidth(context) * 0.018,
                               ),
-                              Badge(
-                                // notification icon with badge
-                                position:
-                                    BadgePosition.topEnd(top: -5, end: -3),
-                                badgeColor: AppColor.colorRed,
-                                badgeContent: Text(
-                                  '5',
-                                  style: TextStyle(
-                                      color: AppColor.colorWhite, fontSize: 10),
-                                ),
-                                child: SvgPicture.asset(
-                                  getIconPath(notificationIcon),
-                                  width: 28,
-                                  height: 28,
+                              InkWell(
+                                onTap: () {},
+                                child: Badge(
+                                  // notification icon with badge
+                                  position:
+                                      BadgePosition.topEnd(top: -5, end: -3),
+                                  badgeColor: AppColor.colorRed,
+                                  badgeContent: Text(
+                                    '5',
+                                    style: TextStyle(
+                                        color: AppColor.colorWhite,
+                                        fontSize: 10),
+                                  ),
+                                  child: SvgPicture.asset(
+                                    getIconPath(notificationIcon),
+                                    width: 28,
+                                    height: 28,
+                                  ),
                                 ),
                               ),
                               SizedBox(
                                 width: displayWidth(context) * 0.018,
                               ),
-                              SvgPicture.asset(
-                                getIconPath(helpIcon),
-                                color: AppColor.colorPrimary,
-                                width: 28,
-                                height: 28,
+                              InkWell(
+                                onTap: () {},
+                                child: SvgPicture.asset(
+                                  getIconPath(helpIcon),
+                                  color: AppColor.colorPrimary,
+                                  width: 28,
+                                  height: 28,
+                                ),
                               ), // help icon
                             ],
                           ),

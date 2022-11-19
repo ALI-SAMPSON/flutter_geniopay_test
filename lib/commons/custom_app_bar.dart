@@ -45,7 +45,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       centerTitle: true,
       actions: [
-        GestureDetector(
+        InkWell(
+          onTap: () {},
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Transform.scale(
@@ -61,6 +62,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => const Size.fromHeight(55);
 }

@@ -7,6 +7,7 @@ import 'package:flutter_geniopay_app/constants/app_font.dart';
 import 'package:flutter_geniopay_app/constants/asset_path.dart';
 import 'package:flutter_geniopay_app/commons/custom_text.dart';
 import 'package:flutter_geniopay_app/features/home/widgets/identity_item.dart';
+import 'package:flutter_geniopay_app/routes/app_pages.dart';
 import 'package:flutter_geniopay_app/utils/size_helpers.dart';
 import 'package:get/get.dart';
 
@@ -142,7 +143,7 @@ class ProofIdentityPage extends StatelessWidget {
                         text: 'CONTINUE',
                         textColor: AppColor.colorBlack,
                         fontFamily: AppFont.iBMPlexSansMedium,
-                        onTap: () => Get.back(),
+                        onTap: () => Get.toNamed(Routes.HOME_PAGE),
                       ),
                     ],
                   ),

@@ -202,7 +202,7 @@ class RegistrationPage extends StatelessWidget {
 
                 CustomButton(
                   text: 'CONTINUE',
-                  onTap: () => Get.toNamed(Routes.SUBSCRIPTION_PAGE),
+                  onTap: () => Get.toNamed(Routes.PROOF_IDENTITY_PAGE),
                   backgroundColor: AppColor.colorPrimaryLight,
                 ),
 
