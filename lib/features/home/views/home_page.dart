@@ -332,26 +332,27 @@ class HomePage extends StatelessWidget {
                                         AppColor.colorPrimary.withOpacity(0.3),
                                     borderRadius: BorderRadius.circular(25),
                                   ),
-                                  child: Center(
-                                    child: Row(
-                                      children: [
-                                        CustomText(
-                                          text: 'USD',
-                                          textColor: AppColor.colorPrimary,
-                                          fontSize: 12.0,
-                                          fontFamily: AppFont.iBMPlexSansMedium,
-                                        ),
-                                        SizedBox(
-                                          width: displayWidth(context) * 0.001,
-                                        ),
-                                        SvgPicture.asset(
-                                          getIconPath(arrowDownIcon),
-                                          color: AppColor.colorPrimary,
-                                          width: 8,
-                                          height: 8,
-                                        ), // tree icon
-                                      ],
-                                    ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      CustomText(
+                                        text: 'USD',
+                                        textColor: AppColor.colorPrimary,
+                                        fontSize: 12.0,
+                                        fontFamily: AppFont.iBMPlexSansMedium,
+                                      ),
+                                      SizedBox(
+                                        width: displayWidth(context) * 0.001,
+                                      ),
+                                      SvgPicture.asset(
+                                        getIconPath(arrowDownIcon),
+                                        color: AppColor.colorPrimary,
+                                        width: 8,
+                                        height: 8,
+                                      ), // tree icon
+                                    ],
                                   ),
                                 ),
 
